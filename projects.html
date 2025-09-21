@@ -1,374 +1,548 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="theme-color" content="#feed01"/>
-<title>Consto | Industrial Construction Company</title>
-<meta name="author" content="Themezinho">
-<meta name="description" content="For all kind of construction company website">
-<meta name="keywords" content="consto, business, construction, company, industrial, building, projects, corporate, apartments, flat, condo, brick, website, design, animation, transition, themezinho">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- SOCIAL MEDIA META -->
-<meta property="og:description" content="Consto | Industrial Construction Company">
-<meta property="og:image" content="http://www.themezinho.net/consto/preview.png">
-<meta property="og:site_name" content="consto">
-<meta property="og:title" content="consto">
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://www.themezinho.net/consto">
+  <!-- Primary SEO -->
+  <title>RenoGo • Projets & inspirations de rénovation en Normandie</title>
+  <meta name="description" content="Inspirez-vous des projets RenoGo en Normandie : rénovation intérieure, entretien extérieur, domotique et maintenance. Des scénarios concrets pensés pour vos maisons et bureaux normands.">
+  <meta name="keywords" content="renovation Normandie, entretien maison Normandie, jardinage Pays d'Auge, electricien Rouen, peinture Caen, isolation Le Havre, sol parquet Normandie, maintenance bureaux Normandie">
+  <link rel="canonical" href="https://www.renogo.fr/projets/">
 
-<!-- TWITTER META -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@consto">
-<meta name="twitter:creator" content="@consto">
-<meta name="twitter:title" content="consto">
-<meta name="twitter:description" content="Consto | Industrial Construction Company">
-<meta name="twitter:image" content="http://www.themezinho.net/consto/preview.png">
+  <!-- Indexing -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-<!-- FAVICON FILES -->
-<link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
-<link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
-<link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
-<link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
-<link href="ico/favicon.png" rel="shortcut icon">
+  <!-- Language / Region -->
+  <meta name="content-language" content="fr-FR">
+  <link rel="alternate" href="https://www.renogo.fr/projets/" hreflang="fr-FR">
+  <link rel="alternate" href="https://www.renogo.fr/" hreflang="x-default">
 
-<!-- CSS FILES -->
-<link rel="stylesheet" href="css/lineicons.css">
-<link rel="stylesheet" href="css/odometer.min.css">
-<link rel="stylesheet" href="css/fancybox.min.css">
-<link rel="stylesheet" href="css/swiper.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <!-- Theme / PWA basics -->
+  <meta name="theme-color" content="#feed01">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RenoGo">
+  <meta property="og:title" content="RenoGo • Projets & inspirations de rénovation en Normandie">
+  <meta property="og:description" content="Projets pilotes de rénovation, jardinage, électricité et maintenance signés RenoGo pour la Normandie.">
+  <meta property="og:url" content="https://www.renogo.fr/projets/">
+  <meta property="og:image" content="https://www.renogo.fr/assets/og/renogo-projets.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@renogo">
+  <meta name="twitter:title" content="RenoGo • Projets & inspirations de rénovation en Normandie">
+  <meta name="twitter:description" content="Histoires de chantiers à venir, garanties et process RenoGo pour les particuliers et pros en Normandie.">
+  <meta name="twitter:image" content="https://www.renogo.fr/assets/og/renogo-projets.jpg">
+
+  <!-- Organization -->
+  <meta name="author" content="RenoGo">
+
+  <!-- Favicons (modern set) -->
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/images/favicon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" sizes="180x180">
+  <meta name="apple-mobile-web-app-title" content="RenoGo">
+  <meta name="msapplication-TileColor" content="#feed01">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/lineicons.css">
+  <link rel="stylesheet" href="css/odometer.min.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD: Collection of upcoming projects -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Projets & inspirations RenoGo",
+    "url": "https://www.renogo.fr/projets/",
+    "description": "Études et chantiers pilotes de RenoGo pour la rénovation et la maintenance en Normandie.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "RenoGo",
+      "url": "https://www.renogo.fr/"
+    },
+    "hasPart": [
+      {
+        "@type": "CreativeWork",
+        "name": "Maison de pêcheur revisitée à Honfleur",
+        "about": ["Peinture intérieure", "Isolation biosourcée", "Menuiseries"],
+        "spatialCoverage": "Honfleur, Calvados"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Villa secondaire connectée à Deauville",
+        "about": ["Domotique", "Éclairage LED", "Sécurité intelligente"],
+        "spatialCoverage": "Deauville, Calvados"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Jardin côtier résilient à Granville",
+        "about": ["Aménagement paysager", "Arrosage intelligent", "Revêtements de sol extérieurs"],
+        "spatialCoverage": "Granville, Manche"
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.renogo.fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Projets",
+        "item": "https://www.renogo.fr/projets/"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-	<div class="first-transition"></div>
-	<!-- end first-transition -->
-	<div class="page-transition"></div>
-	<!-- end page-transition -->
-	<div class="search-box">
-		<div class="inner">
-		<form>
-			<input type="search" placeholder="Tyhe here to search">
-			<input type="submit" value="SEARCH">
-			</form>
-		</div>
-	</div>
-	<!-- end search-box -->
-	<aside class="side-widget">
-	<div class="inner">
-			<div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Image"></a> </div>
-    <!-- end logo -->
-		<div class="hide-mobile">
-		<p>Extremity direction existence as dashwoods do up. Securing <u>marianne led</u> welcomed offended but offering six raptures. </p>
-		<figure class="gallery"><img src="images/slide02.jpg" alt="Image"><img src="images/slide03.jpg" alt="Image"></figure>
-		<h6 class="widget-title">ADDRESS</h6>
-		<address class="address">
-			<p>228 Cardigan Road, Leeds<br>
-Geneva Switzerland</p>
-		  <p>+1 (850) 344 0 66 #20</p>
-			</address>
-		<h6 class="widget-title">FOLLOW US</h6>
-		<ul class="social-media">
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">Instagram</a></li>
-		</ul>
-			</div>
-		<!-- end hide-mobile -->
-		<div class="show-mobile">
-    <div class="languages">
-      <ul>
-        <li><a href="#">en</a></li>
-        <li><a href="#">ru</a></li>
-      </ul>
-    </div>
-    <!-- end languages -->
-    <div class="site-menu">
-      <ul>
-        <li><a href="#">Consto</a><i class="lni lni-chevron-down-circle"></i>
-		  <ul>
-				<li><a href="about-company.html">About Company</a></li>
-				<li><a href="core-values.html">Core Values</a></li>
-				<li><a href="leadership.html">Leadership</a></li>
-				<li><a href="our-history.html">Our History</a></li>
-				<li><a href="offices.html">Offices</a></li>
-				<li><a href="certificates.html">Certificates</a></li>
-			</ul>
-		  </li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <!-- end site-menu -->
-			</div>
-		<!-- end show-mobile -->
-		<small>© 2020 Consto | Industrial Construction Company</small>
-		</div>
-		<!-- end inner -->
-	</aside>
-	<!-- end side-widget -->
-<nav class="navbar">
-  <div class="container">
-    <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Image"></a> </div>
-    <!-- end logo -->
-    <div class="languages">
-      <ul>
-        <li><a href="#">en</a></li>
-        <li><a href="#">ru</a></li>
-      </ul>
-    </div>
-    <!-- end languages -->
-    <div class="site-menu">
-      <ul>
-        <li><a href="#">Consto</a>
-		  <ul>
-				<li><a href="about-company.html">About Company</a></li>
-				<li><a href="core-values.html">Core Values</a></li>
-				<li><a href="leadership.html">Leadership</a></li>
-				<li><a href="our-history.html">Our History</a></li>
-				<li><a href="offices.html">Offices</a></li>
-				<li><a href="certificates.html">Certificates</a></li>
-			</ul>
-		  </li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <!-- end site-menu -->
-    <div class="search"> <i class="lni lni-search-alt"></i> </div>
-    <!-- end search -->
-    
-     <div class="hamburger">
-      <div id="hamburger"> <span></span> <span></span> <span></span> </div>
-      <div id="cross"> <span></span> <span></span> </div>
-    </div>
-    <!-- end hamburger --> 
-    <!-- end hamburher --> 
-    <a href="#sales-specialist-form" class="navbar-button" data-fancybox><i class="lni lni-mobile"></i> <span>SALES SPECIALIST</span></a> </div>
-  <!-- end container --> 
-</nav>
-<!-- end navbar -->
-<header class="page-header">
-  <div class="container">
-    <h1>PROJECTS</h1>
-	  <h6>Small Programs Perfect For Beginners To Get Started With Personal Growth</h6>
-	  <ul>
-	  	<li><a href="#">HOME</a></li>
-	  	<li>PROJECTS</li>
-	  </ul>
-  </div>
-  <!-- end container --> 
-</header>
-<!-- end page-header -->
-<section class="content-section ">
-  <div class="container">
-    <div class="row">
-		<div class="col-12">
-			<ul class="isotope-filter">
-   			<li data-filter="*" class="current">ALL</li>
-          	<li data-filter=".one">BUILDING</li>
-          	<li data-filter=".two">COMMERCIAL</li>
-          	<li data-filter=".three">VILLAS</li>
-   		</ul>
-		</div>
-		<!-- end col-12 -->
-	  	<div class="col-12">
-			<ul class="projects">
-				<li class="one">
-				 <figure class="project-box"> <a href="project-single.html"><img src="images/slide01.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Quark Life Homes</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="two">
-				 <figure class="project-box"> <a href="project-single.html"><img src="images/slide02.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>River Life Residence</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="three">
-				 <figure class="project-box"> <a href="project-single.html"><img src="images/slide03.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Orgue Shopping Mall</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="one">
-				 <figure class="project-box"> <a href="project-single.html"><img src="images/slide04.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Green Socks Villas</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="two">
-				 <figure class="project-box"> <a href="project-single.html"><img src="images/slide05.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Prensten Hudson's</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="three">
-				 <figure class="project-box"> <a href="project-single.html"><img src="images/slide06.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>York Education Center</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="one">
-				 <figure class="project-box"> <a href="project-single.html"><img src="images/slide07.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>Miamy Beach House</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-				<li class="two">
-				 <figure class="project-box"> <a href="project-single.html"><img src="images/slide08.jpg" alt="Image"></a>
-          <figcaption>
-            <h5>All Life Resorts</h5>
-          </figcaption>
-        </figure>
-					<!-- end project-box -->
-				</li>
-				<!-- end li -->
-			</ul>
-		</div>
-		<!-- end col-12 -->
-	  </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-</section>
-<!-- end content-section -->
- <section class="footer-bar">
-	  <div class="container">
-    <div class="row">
-      <div class="col-12">
-		  
-          <figure class="logo"> <img src="images/logo.png" alt="Image"> </figure>
-          <h2>Live <b>better</b> and <b>beautiful</b></h2>
-          <a href="#" class="button">GET A CONSULTATION <i class="lni lni-arrow-right"></i></a> 
-		  <div class="sales-representive">
-		  	<figure>
-			  	<img src="images/author01.jpg" alt="Image">
-			  </figure>Sales representative
-			  
-			  <b>+1 (850) 344 0 66 #20</b> free call !
-		  </div>
-		  <!-- end sales-representive -->
-		</div>
-		<!-- end col-12  -->
-    </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-		
-		</section>
-        <!-- end footer-bar --> 
-	
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <h6 class="widget-title">HEADQUARTER</h6>
-        <address><p>228 Cardigan Road, Leeds<br>
-Geneva Switzerland</p>
-		  <p>+1 (850) 344 0 66 #20</p>
-			<a href="https://www.google.com/maps/search/?api=1&query=centurylink+field" data-fancybox data-width="640" data-height="360">FIND US ON MAP</a>
-			</address>
-      </div>
-      <!-- end col-4 --> 
-		<div class="col-lg-4 col-md-6">
-        <h6 class="widget-title">SALES OFFICES</h6>
-        <address><p>121 South 8th Street, Suite 1200<br>
-Minneapolis MN 55402</p>
-		  <p>+1 (850) 344 0 66 #20</p>
-			<a href="https://www.google.com/maps/search/?api=1&query=centurylink+field" data-fancybox data-width="640" data-height="360">FIND US ON MAP</a>
-			</address>
-      </div>
-      <!-- end col-4 --> 
-		<div class="col-lg-4">
-        <h6 class="widget-title">SUBSCRIPTION</h6>
-       <p>For more information, please join us.</p>
-			<form>
-			<input type="email" placeholder="Type your e-mail">
-				<input type="submit" value="JOIN NOW">
-			</form>
-      </div>
-      <!-- end col-4 --> 
-		<div class="col-12">
-			<div class="footer-bottom">
-				<span>© 2020 Consto | Industrial Construction Company</span>
-				<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Twitter</a></li>
-				</ul>
-			</div>
-			<!-- end footer-bottom -->
-		</div>
-		<!-- end col-12  -->
-    </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-	<a href="#" class="scroll-top"><i class="lni lni-arrow-up"></i>
-	<small>Scroll Up</small>
-	</a>
-	<!-- end scroll-top -->
-</footer>
-<!-- end footer --> 
-	<div id="sales-specialist-form">
-		<form>
-			<div class="form-group">
-			<span>Full Name</span>
-				<input type="text">
-			</div>
-			<!-- end form-group -->
-			<div class="form-group">
-			<span>Phone Number</span>
-				<input type="text">
-			</div>
-			<!-- end form-group -->
-			<div class="form-group">
-			<span>Current E-mail</span>
-				<input type="email">
-			</div>
-			<!-- end form-group -->
-			<div class="form-group">
-				<input type="submit" value="REQUEST A CALL">
-			</div>
-			<!-- end form-group -->
-		</form>
-	</div>		 
-	<!-- end sales-specialist-form -->
+  <div class="first-transition"></div>
+  <div class="page-transition"></div>
 
-<!-- JS FILES --> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/swiper.min.js"></script> 
-<script src="js/fancybox.min.js"></script> 
-<script src="js/odometer.min.js"></script> 
-<script src="js/isotope.min.js"></script> 
-<script src="js/scripts.js"></script>
+  <!-- ===== ASIDE (mobile drawer) ===== -->
+  <aside class="side-widget">
+    <div class="inner">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo RenoGo"></a>
+      </div>
+
+      <div class="hide-mobile">
+        <p>
+          RenoGo imagine et pilote vos projets de rénovation en Normandie : <u>jardinage & paysages</u>,
+          <u>électricité & smart home</u>, <u>peinture & finitions</u>, <u>cloisons & isolation</u> ainsi que <u>revêtements de sol</u>.
+          Même avant la première vis, nous sécurisons budgets, planning et sélection des artisans locaux certifiés.
+        </p>
+
+        <figure class="gallery">
+          <img src="images/slide02.jpg" alt="Croquis d'un salon lumineux à Rouen">
+          <img src="images/slide03.jpg" alt="Esquisse d'un jardin normand repensé">
+        </figure>
+
+        <h6 class="widget-title">COORDINATION</h6>
+        <address class="address">
+          <p>Paris (siège) &amp; antenne Normandie<br>
+            Déplacements entre Rouen, Caen, Le Havre et la baie du Mont-Saint-Michel</p>
+          <p>+33 2 32 00 00 05</p>
+        </address>
+
+        <h6 class="widget-title">SUIVEZ-NOUS</h6>
+        <ul class="social-media">
+          <li><a href="#" rel="nofollow noopener">Facebook</a></li>
+          <li><a href="#" rel="nofollow noopener">Pinterest</a></li>
+          <li><a href="#" rel="nofollow noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <!-- end hide-mobile -->
+
+      <!-- MOBILE MENU (shown inside drawer) -->
+      <div class="show-mobile">
+        <nav class="site-menu" aria-label="Menu principal mobile">
+          <ul>
+            <li class="has-children"><a href="about-company.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="news.html">Actualités</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end show-mobile -->
+
+      <small>© RenoGo</small>
+    </div>
+    <!-- end inner -->
+  </aside>
+  <!-- end side-widget -->
+
+  <!-- ===== NAVBAR (desktop / tablet) ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="Logo RenoGo"></a>
+      </div>
+
+      <div class="site-menu" aria-label="Menu principal">
+        <ul>
+          <li class="has-children"><a href="about-company.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projets</a></li>
+          <li><a href="news.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- end site-menu -->
+
+      <div class="search"><i class="lni lni-search-alt"></i></div>
+
+      <div class="hamburger" aria-controls="mobile-menu" aria-expanded="false">
+        <div id="hamburger"><span></span><span></span><span></span></div>
+        <div id="cross"><span></span><span></span></div>
+      </div>
+
+      <a href="#sales-specialist-form" class="navbar-button" data-fancybox>
+        <i class="lni lni-mobile"></i> <span>DEVIS GRATUIT</span>
+      </a>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Projets &amp; inspirations</h1>
+      <h6>Des scénarios réels conçus avec nos clients normands pour préparer vos futurs chantiers, même sans photos avant/après… pour l'instant.</h6>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li>Projets</li>
+      </ul>
+    </div>
+    <!-- end container -->
+  </header>
+  <!-- end page-header -->
+
+  <section class="content-section">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="section-title">
+            <h2>Pourquoi parler de projets avant la première pierre&nbsp;?</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            Parce que chaque maison normande, chaque bureau avec vue sur la Manche ou la Seine, mérite une préparation millimétrée.
+            RenoGo travaille en amont sur la faisabilité, les autorisations, le choix des matériaux résistants à l'air marin ou à l'humidité du bocage.
+            Nous partageons ici nos inspirations et projets pilotes afin que vous puissiez vous projeter avec confiance.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <div class="icon-content">
+            <figure><img src="images/icon01.png" alt="Études personnalisées"></figure>
+            <h3>Études personnalisées</h3>
+            <small>Diagnostics techniques, relevés 3D et estimations budgétaires pour Caen, Rouen, Alençon ou Cherbourg.</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-content">
+            <figure><img src="images/icon02.png" alt="Artisans sélectionnés"></figure>
+            <h3>Artisans sélectionnés</h3>
+            <small>Un réseau de partenaires normands certifiés RGE, Qualifelec ou QualiPaysage, coordonnés par nos chefs de projet.</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-content">
+            <figure><img src="images/icon03.png" alt="Suivi digital"></figure>
+            <h3>Suivi digital</h3>
+            <small>Planning partagé, comptes rendus hebdomadaires et domotique prête à configurer depuis votre smartphone.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <ul class="isotope-filter" aria-label="Filtrer les inspirations">
+            <li data-filter="*" class="current">Tous</li>
+            <li data-filter=".amenagement">Jardin &amp; paysage</li>
+            <li data-filter=".energie">Électricité &amp; smart home</li>
+            <li data-filter=".finitions">Peinture &amp; finitions</li>
+            <li data-filter=".isolation">Cloisons, isolation &amp; sols</li>
+          </ul>
+        </div>
+        <!-- end col-12 -->
+
+        <div class="col-12">
+          <ul class="projects">
+            <li class="amenagement">
+              <figure class="project-box">
+                <a href="project-single.html">
+                  <img src="images/slide04.jpg" alt="Illustration d'un jardin côtier à Granville">
+                </a>
+                <figcaption>
+                  <h5>Granville • Jardin côtier résilient</h5>
+                  <p>Création d'une oasis vivace résistante aux embruns, terrasse en bois thermo-traité et éclairage LED basse consommation pour prolonger les soirées face à la mer.</p>
+                  <span>Statut : études de sol validées, démarrage au printemps</span>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- end li -->
+
+            <li class="energie">
+              <figure class="project-box">
+                <a href="project-single.html">
+                  <img src="images/slide08.jpg" alt="Projection domotique d'une villa à Deauville">
+                </a>
+                <figcaption>
+                  <h5>Deauville • Villa secondaire connectée</h5>
+                  <p>Installation domotique complète : chauffage pilotable, scénarios lumineux doux pour les week-ends, sécurité périmétrique et bornes de recharge discrètes.</p>
+                  <span>Statut : sélection des équipements smart home en cours</span>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- end li -->
+
+            <li class="finitions">
+              <figure class="project-box">
+                <a href="project-single.html">
+                  <img src="images/slide01.jpg" alt="Projection d'un séjour rénové à Rouen">
+                </a>
+                <figcaption>
+                  <h5>Rouen • Maison de ville lumineuse</h5>
+                  <p>Peintures minérales respirantes, mise en valeur des moulures, parquet chêne clair et optimisation acoustique pour un couple de télétravailleurs.</p>
+                  <span>Statut : palettes couleurs validées, pose prévue cet été</span>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- end li -->
+
+            <li class="isolation">
+              <figure class="project-box">
+                <a href="project-single.html">
+                  <img src="images/slide06.jpg" alt="Perspective d'une longère isolée près de Bayeux">
+                </a>
+                <figcaption>
+                  <h5>Bayeux • Longère basse consommation</h5>
+                  <p>Isolation biosourcée chanvre-lin, cloisons phonique pour les chambres d'hôtes et planchers chauffants hydrauliques reliés à une pompe à chaleur.</p>
+                  <span>Statut : dossiers aides énergie déposés</span>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- end li -->
+
+            <li class="amenagement">
+              <figure class="project-box">
+                <a href="project-single.html">
+                  <img src="images/slide03.jpg" alt="Visualisation d'une cour végétalisée à Caen">
+                </a>
+                <figcaption>
+                  <h5>Caen • Cour végétalisée &amp; potager urbain</h5>
+                  <p>Transformation d'une cour bétonnée en havre comestible : carrés potagers, récupération d'eau de pluie et clôtures bois fabriquées à Lisieux.</p>
+                  <span>Statut : calendrier plantations établi avec notre paysagiste</span>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- end li -->
+
+            <li class="energie">
+              <figure class="project-box">
+                <a href="project-single.html">
+                  <img src="images/slide05.jpg" alt="Simulation d'un plateau tertiaire à Le Havre">
+                </a>
+                <figcaption>
+                  <h5>Le Havre • Bureaux intelligents</h5>
+                  <p>Relamping LED, détection de présence, prises connectées et maintenance préventive centralisée pour un siège social près des docks.</p>
+                  <span>Statut : audit énergétique terminé, lot électricité en lancement</span>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- end li -->
+
+            <li class="finitions">
+              <figure class="project-box">
+                <a href="project-single.html">
+                  <img src="images/slide07.jpg" alt="Ambiance d'une chambre parentale à Cherbourg">
+                </a>
+                <figcaption>
+                  <h5>Cherbourg • Suite parentale apaisante</h5>
+                  <p>Peinture aux pigments naturels, tête de lit sur-mesure, éclairage indirect et isolation phonique des cloisons pour des nuits bercées par la mer.</p>
+                  <span>Statut : menuiseries en fabrication dans nos ateliers partenaires</span>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- end li -->
+
+            <li class="isolation">
+              <figure class="project-box">
+                <a href="project-single.html">
+                  <img src="images/slide02.jpg" alt="Perspective d'un hall d'immeuble rénové à Évreux">
+                </a>
+                <figcaption>
+                  <h5>Évreux • Immeuble copropriété sereine</h5>
+                  <p>Remise aux normes électriques, reprise des cloisons coupe-feu, revêtements de sol grand passage et plan de maintenance annuel.</p>
+                  <span>Statut : vote des copropriétaires obtenu à l'unanimité</span>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- end li -->
+          </ul>
+        </div>
+        <!-- end col-12 -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end content-section -->
+
+  <section class="content-section bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="section-title">
+            <h2>Transparence &amp; garanties RenoGo</h2>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p>
+            Avant même le premier coup de pinceau, nous engageons une relation de confiance : comptes rendus partagés,
+            assurance décennale, interlocuteur unique, visites de contrôle hebdomadaires.
+            Chaque projet présenté ici est déjà sécurisé par un calendrier détaillé et des devis fermes validés avec nos partenaires.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="icon-content">
+            <h3>Process en 5 étapes</h3>
+            <ul>
+              <li>1. Rendez-vous inspiration chez vous ou en visio depuis Paris.</li>
+              <li>2. Relevés techniques et modélisation 3D pour anticiper chaque détail.</li>
+              <li>3. Consultation des artisans normands et consolidation des devis.</li>
+              <li>4. Planification des travaux par lot, suivi des approvisionnements.</li>
+              <li>5. Réception contrôlée et maintenance préventive programmée.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="icon-content">
+            <h3>Vos bénéfices concrets</h3>
+            <ul>
+              <li>Délais réalistes grâce à une logistique depuis notre hub de Pont-l'Évêque.</li>
+              <li>Démarches administratives (DP, CEE, aides MaPrimeRénov') prises en charge.</li>
+              <li>Matériaux adaptés au climat normand : anti-corrosion, anti-humidité, essences locales.</li>
+              <li>Budget maîtrisé avec un suivi des dépenses en temps réel.</li>
+              <li>Service après-vente : visites saisonnières jardin &amp; maintenance électrique.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <figure class="logo"><img src="images/logo.png" alt="Logo RenoGo"></figure>
+          <h2>Imaginons ensemble le futur de votre bien normand</h2>
+          <a href="contact.html" class="button">PLANIFIER UN RENDEZ-VOUS <i class="lni lni-arrow-right"></i></a>
+          <div class="sales-representive">
+            <figure>
+              <img src="images/author01.jpg" alt="Conseiller RenoGo">
+            </figure>
+            Votre conseiller dédié<br>
+            <b>+33 (0)2 79 02 45 11</b> — appel gratuit depuis la France
+          </div>
+          <!-- end sales-representive -->
+        </div>
+        <!-- end col-12  -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- end footer-bar -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h6 class="widget-title">SIÈGE SOCIAL</h6>
+          <address>
+            <p>42 rue du Faubourg Saint-Antoine<br>75012 Paris</p>
+            <p>+33 (0)1 86 90 12 45</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=42+rue+du+Faubourg+Saint-Antoine+75012+Paris" data-fancybox data-width="640" data-height="360">NOUS LOCALISER</a>
+          </address>
+        </div>
+        <!-- end col-4 -->
+        <div class="col-lg-4 col-md-6">
+          <h6 class="widget-title">BASE NORMANDE</h6>
+          <address>
+            <p>Atelier logistique – Zone d'activité du Pays d'Auge<br>14130 Pont-l'Évêque</p>
+            <p>+33 (0)2 79 02 45 11</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Pont-l%27Ev%C3%AAque+Normandie" data-fancybox data-width="640" data-height="360">PLAN D'ACCÈS</a>
+          </address>
+        </div>
+        <!-- end col-4 -->
+        <div class="col-lg-4">
+          <h6 class="widget-title">RESTONS EN CONTACT</h6>
+          <p>Recevez nos conseils saisonniers et nos offres exclusives pour vos projets en Normandie.</p>
+          <form>
+            <input type="email" placeholder="Votre e-mail">
+            <input type="submit" value="S'INSCRIRE">
+          </form>
+        </div>
+        <!-- end col-4 -->
+        <div class="col-12">
+          <div class="footer-bottom">
+            <span>© 2024 RenoGo | Rénovation, entretien et maintenance en Normandie</span>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <!-- end footer-bottom -->
+        </div>
+        <!-- end col-12  -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+    <a href="#" class="scroll-top"><i class="lni lni-arrow-up"></i> <small>Retour en haut</small> </a>
+    <!-- end scroll-top -->
+  </footer>
+  <!-- end footer -->
+
+  <div id="sales-specialist-form">
+    <form>
+      <div class="form-group"><span>Nom complet</span>
+        <input type="text">
+      </div>
+      <div class="form-group"><span>Numéro de téléphone</span>
+        <input type="text">
+      </div>
+      <div class="form-group"><span>Adresse e-mail</span>
+        <input type="email">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="ÊTRE RAPPELÉ">
+      </div>
+    </form>
+  </div>
+  <!-- end sales-specialist-form -->
+
+  <!-- JS FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/fancybox.min.js"></script>
+  <script src="js/odometer.min.js"></script>
+  <script src="js/isotope.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
