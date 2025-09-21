@@ -6,17 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Primary SEO -->
-  <title>RenoGo • Projets & inspirations de rénovation en Normandie</title>
-  <meta name="description" content="Inspirez-vous des projets RenoGo en Normandie : rénovation intérieure, entretien extérieur, domotique et maintenance. Des scénarios concrets pensés pour vos maisons et bureaux normands.">
-  <meta name="keywords" content="renovation Normandie, entretien maison Normandie, jardinage Pays d'Auge, electricien Rouen, peinture Caen, isolation Le Havre, sol parquet Normandie, maintenance bureaux Normandie">
-  <link rel="canonical" href="https://www.renogo.fr/projets/">
+  <title>RenoGo • Rénovation intérieure & amélioration de l’habitat en France</title>
+  <meta name="description" content="RenoGo rénove et transforme appartements et maisons : cuisines, salles de bain, isolation, électricité, peinture. Devis rapide, travaux qualitatifs, livrés à temps.">
+  <link rel="canonical" href="https://www.renogo.fr/">
 
   <!-- Indexing -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
   <!-- Language / Region -->
   <meta name="content-language" content="fr-FR">
-  <link rel="alternate" href="https://www.renogo.fr/projets/" hreflang="fr-FR">
+  <link rel="alternate" href="https://www.renogo.fr/" hreflang="fr-FR">
+  <!-- Optional secondary language homepage
+  <link rel="alternate" href="https://www.renogo.fr/en/" hreflang="en">
+  -->
   <link rel="alternate" href="https://www.renogo.fr/" hreflang="x-default">
 
   <!-- Theme / PWA basics -->
@@ -27,19 +29,19 @@
   <meta property="og:locale" content="fr_FR">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="RenoGo">
-  <meta property="og:title" content="RenoGo • Projets & inspirations de rénovation en Normandie">
-  <meta property="og:description" content="Projets pilotes de rénovation, jardinage, électricité et maintenance signés RenoGo pour la Normandie.">
-  <meta property="og:url" content="https://www.renogo.fr/projets/">
-  <meta property="og:image" content="https://www.renogo.fr/assets/og/renogo-projets.jpg">
+  <meta property="og:title" content="RenoGo • Rénovation intérieure & amélioration de l’habitat">
+  <meta property="og:description" content="Cuisine, salle de bain, peinture, isolation et plus. Devis rapide, travaux maîtrisés.">
+  <meta property="og:url" content="https://www.renogo.fr/">
+  <meta property="og:image" content="https://www.renogo.fr/assets/og/renogo-cover.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@renogo">
-  <meta name="twitter:title" content="RenoGo • Projets & inspirations de rénovation en Normandie">
-  <meta name="twitter:description" content="Histoires de chantiers à venir, garanties et process RenoGo pour les particuliers et pros en Normandie.">
-  <meta name="twitter:image" content="https://www.renogo.fr/assets/og/renogo-projets.jpg">
+  <meta name="twitter:title" content="RenoGo • Rénovation intérieure & amélioration de l’habitat">
+  <meta name="twitter:description" content="Rénovation d’appartements et maisons en France. Devis rapide, délais tenus.">
+  <meta name="twitter:image" content="https://www.renogo.fr/assets/og/renogo-cover.jpg">
 
   <!-- Organization -->
   <meta name="author" content="RenoGo">
@@ -52,6 +54,10 @@
   <meta name="apple-mobile-web-app-title" content="RenoGo">
   <meta name="msapplication-TileColor" content="#feed01">
 
+  <!-- Preconnects (only keep what you really use, e.g., fonts/CDNs) -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin> -->
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/lineicons.css">
   <link rel="stylesheet" href="css/odometer.min.css">
@@ -60,154 +66,165 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- JSON-LD: Collection of upcoming projects -->
+  <!-- JSON-LD: Organization / LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Projets & inspirations RenoGo",
-    "url": "https://www.renogo.fr/projets/",
-    "description": "Études et chantiers pilotes de RenoGo pour la rénovation et la maintenance en Normandie.",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "RenoGo",
-      "url": "https://www.renogo.fr/"
+    "@type": "HomeAndConstructionBusiness",
+    "name": "RenoGo",
+    "url": "https://www.renogo.fr/",
+    "logo": "https://www.renogo.fr/assets/logo/renogo-logo.svg",
+    "image": "https://www.renogo.fr/assets/og/renogo-cover.jpg",
+    "description": "Rénovation intérieure d’appartements et maisons : cuisines, salles de bain, isolation, électricité, peinture.",
+    "telephone": "+33-1-23-45-67-89",
+    "areaServed": "FR",
+    "priceRange": "€€",
+    "foundingDate": "2025",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FR",
+      "addressRegion": "Normandie",
+      "addressLocality": "Eure"
     },
-    "hasPart": [
-      {
-        "@type": "CreativeWork",
-        "name": "Maison de pêcheur revisitée à Honfleur",
-        "about": ["Peinture intérieure", "Isolation biosourcée", "Menuiseries"],
-        "spatialCoverage": "Honfleur, Calvados"
-      },
-      {
-        "@type": "CreativeWork",
-        "name": "Villa secondaire connectée à Deauville",
-        "about": ["Domotique", "Éclairage LED", "Sécurité intelligente"],
-        "spatialCoverage": "Deauville, Calvados"
-      },
-      {
-        "@type": "CreativeWork",
-        "name": "Jardin côtier résilient à Granville",
-        "about": ["Aménagement paysager", "Arrosage intelligent", "Revêtements de sol extérieurs"],
-        "spatialCoverage": "Granville, Manche"
+    "sameAs": [
+      "https://www.linkedin.com/company/renogo",
+      "https://facebook.com/renogo",
+      "https://instagram.com/renogo"
+    ],
+    "makesOffer": [{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Rénovation de salle de bain"
       }
-    ]
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Rénovation de cuisine"
+      }
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Peinture & finitions"
+      }
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Isolation & efficacité énergétique"
+      }
+    }]
   }
   </script>
 
-  <!-- JSON-LD: Breadcrumb -->
+  <!-- JSON-LD: WebSite with SearchAction (if you have on-site search) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "https://www.renogo.fr/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Projets",
-        "item": "https://www.renogo.fr/projets/"
-      }
-    ]
+    "@type": "WebSite",
+    "name": "RenoGo",
+    "url": "https://www.renogo.fr/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.renogo.fr/recherche?q={recherche}",
+      "query-input": "required name=recherche"
+    }
   }
   </script>
-</head>
-<body>
-  <div class="first-transition"></div>
-  <div class="page-transition"></div>
-
-  <!-- ===== ASIDE (mobile drawer) ===== -->
-  <aside class="side-widget">
-    <div class="inner">
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="Logo RenoGo"></a>
-      </div>
-
-      <div class="hide-mobile">
-        <p>
-          RenoGo imagine et pilote vos projets de rénovation en Normandie : <u>jardinage & paysages</u>,
-          <u>électricité & smart home</u>, <u>peinture & finitions</u>, <u>cloisons & isolation</u> ainsi que <u>revêtements de sol</u>.
-          Même avant la première vis, nous sécurisons budgets, planning et sélection des artisans locaux certifiés.
-        </p>
-
-        <figure class="gallery">
-          <img src="images/slide02.jpg" alt="Croquis d'un salon lumineux à Rouen">
-          <img src="images/slide03.jpg" alt="Esquisse d'un jardin normand repensé">
-        </figure>
-
-        <h6 class="widget-title">COORDINATION</h6>
-        <address class="address">
-          <p>Paris (siège) &amp; antenne Normandie<br>
-            Déplacements entre Rouen, Caen, Le Havre et la baie du Mont-Saint-Michel</p>
-          <p>+33 2 32 00 00 05</p>
-        </address>
-
-        <h6 class="widget-title">SUIVEZ-NOUS</h6>
-        <ul class="social-media">
-          <li><a href="#" rel="nofollow noopener">Facebook</a></li>
-          <li><a href="#" rel="nofollow noopener">Pinterest</a></li>
-          <li><a href="#" rel="nofollow noopener">Instagram</a></li>
-        </ul>
-      </div>
-      <!-- end hide-mobile -->
-
-      <!-- MOBILE MENU (shown inside drawer) -->
-      <div class="show-mobile">
-        <nav class="site-menu" aria-label="Menu principal mobile">
-          <ul>
-            <li class="has-children"><a href="about-company.html">À propos</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="news.html">Actualités</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- end show-mobile -->
-
-      <small>© RenoGo</small>
+<!-- ===== ASIDE (mobile drawer) ===== -->
+<aside class="side-widget">
+  <div class="inner">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Logo RenoGo"></a>
     </div>
-    <!-- end inner -->
-  </aside>
-  <!-- end side-widget -->
 
-  <!-- ===== NAVBAR (desktop / tablet) ===== -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.png" alt="Logo RenoGo"></a>
-      </div>
+    <div class="hide-mobile">
+      <p>
+        RenoGo accompagne vos projets de rénovation et d’entretien en Normandie :
+        <u>électricité & éclairage</u>, <u>peinture & sols</u>, <u>cloisons & isolation</u>,
+        <u>jardinage & aménagement paysager</u>, ainsi que <u>domotique / maison intelligente</u>.
+        Des chantiers propres, des délais tenus, un suivi de proximité.
+      </p>
 
-      <div class="site-menu" aria-label="Menu principal">
+      <figure class="gallery">
+        <img src="images/slide02.jpg" alt="Avant / après — séjour rénové à Rouen">
+        <img src="images/slide03.jpg" alt="Aménagement paysager et terrasse bois à Évreux">
+      </figure>
+
+      <h6 class="widget-title">ADRESSE</h6>
+      <address class="address">
+        <p>Paris (Île-de-France) — Coordination des projets<br>
+           Interventions en Normandie (Rouen, Caen, Évreux…)</p>
+        <p>+33 2 32 00 00 05</p>
+      </address>
+
+      <h6 class="widget-title">SUIVEZ-NOUS</h6>
+      <ul class="social-media">
+        <li><a href="#" rel="nofollow noopener">Facebook</a></li>
+        <li><a href="#" rel="nofollow noopener">Pinterest</a></li>
+        <li><a href="#" rel="nofollow noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <!-- end hide-mobile -->
+
+    <!-- MOBILE MENU (shown inside drawer) -->
+    <div class="show-mobile">
+      <nav class="site-menu" aria-label="Menu principal mobile">
         <ul>
-          <li class="has-children"><a href="about-company.html">À propos</a></li>
+          <li class="has-children">
+         <a href="about-company.html">À propos</a></a>
+          </li>
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">Projets</a></li>
           <li><a href="news.html">Actualités</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
-      <!-- end site-menu -->
-
-      <div class="search"><i class="lni lni-search-alt"></i></div>
-
-      <div class="hamburger" aria-controls="mobile-menu" aria-expanded="false">
-        <div id="hamburger"><span></span><span></span><span></span></div>
-        <div id="cross"><span></span><span></span></div>
-      </div>
-
-      <a href="#sales-specialist-form" class="navbar-button" data-fancybox>
-        <i class="lni lni-mobile"></i> <span>DEVIS GRATUIT</span>
-      </a>
+      </nav>
     </div>
-  </nav>
-  <!-- end navbar -->
+    <!-- end show-mobile -->
+
+    <small>© RenoGo</small>
+  </div>
+  <!-- end inner -->
+</aside>
+<!-- end side-widget -->
+
+
+<!-- ===== NAVBAR (desktop / tablet) ===== -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Logo RenoGo"></a>
+    </div>
+
+    <div class="site-menu" aria-label="Menu principal">
+      <ul>
+        <li class="has-children">
+          <a href="about-company.html">À propos</a>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="news.html">Actualités</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- end site-menu -->
+
+    <div class="search"><i class="lni lni-search-alt"></i></div>
+
+    <div class="hamburger" aria-controls="mobile-menu" aria-expanded="false">
+      <div id="hamburger"><span></span><span></span><span></span></div>
+      <div id="cross"><span></span><span></span></div>
+    </div>
+
+    <a href="#sales-specialist-form" class="navbar-button" data-fancybox>
+      <i class="lni lni-mobile"></i> <span>DEVIS GRATUIT</span>
+    </a>
+  </div>
+</nav>
+<!-- end navbar -->
 
   <header class="page-header">
     <div class="container">
