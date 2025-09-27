@@ -829,8 +829,9 @@ a:hover{text-decoration: underline; color:$color-dark;}
 
 /* FOOTER */
 .footer{width: 100%; display: block; background-color:$color-dark; position: relative; padding-top: 80px; color: #fff;
-	.scroll-top{width: 100px; background: $color-main; position: absolute; right: 30px; top: -30px; z-index: 1; color: $color-dark; text-align: center; padding: 15px 0;
-		small{width: 100%; display: block;}}
+        .scroll-top{background: $color-main; position: fixed; left: 30px; bottom: 30px; right: auto; top: auto; z-index: 1000; color: $color-dark; padding: 14px 24px; border-radius: 40px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+                i{font-size: 18px;}
+                small{width: auto; display: inline;}}
 	.widget-title{width: 100%; display: block; margin-bottom: 20px; font-weight: 600; opacity: 0.7; letter-spacing: 2px;}
 	address{width: 100%; display: block; margin: 0;
 		p{width: 100%; display: block;}
@@ -845,6 +846,8 @@ a:hover{text-decoration: underline; color:$color-dark;}
 			li{display: inline-block; margin-left: 20px; padding: 0; list-style: none;
 				a{opacity: 0.7; font-size: 13px; color: #fff;
 					&:hover{opacity: 1; text-decoration-color: $color-main;}}}}}}
+
+
 
 
 /* SALES SPECIALIST FORM */
@@ -942,7 +945,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0;}
 	.logo-item{margin: 15px 0;}
 	.col-lg-5 .recent-news{margin-bottom: 30px;}
 	.footer-bar .sales-representive{margin-left: 0; margin-top: 30px;}
-	.footer address{margin-bottom: 50px;}
+        .footer address{margin-bottom: 50px;}
 }
 
 
@@ -985,10 +988,10 @@ input::-moz-focus-inner, input::-moz-focus-outer {  border: 0;}
 	.calculator .form{padding: 30px;}
 	.footer-bar h2{font-size: 40px;}
 	.footer-bar .sales-representive{line-height: inherit;}
-	.footer-bar .sales-representive b{color: $color-main;}
-	.footer-bar .sales-representive b:before{display: none;}
-	.footer-bar .sales-representive figure{width: 100%;}
-	.footer .scroll-top{right: auto; left: 15px;}
-	.footer .footer-bottom ul{float: left;}
-	.footer .footer-bottom ul li{ margin-left: 0; margin-right: 10px;}
+        .footer-bar .sales-representive b{color: $color-main;}
+        .footer-bar .sales-representive b:before{display: none;}
+        .footer-bar .sales-representive figure{width: 100%;}
+        .footer .scroll-top{left: 15px; bottom: 15px; padding: 12px 20px;}
+        .footer .footer-bottom ul{float: left;}
+        .footer .footer-bottom ul li{ margin-left: 0; margin-right: 10px;}
 }
