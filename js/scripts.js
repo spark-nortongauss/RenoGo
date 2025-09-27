@@ -54,6 +54,85 @@
     });
 
 
+    // CTA POPUP
+    var $ctaPopup = $('.cta-popup');
+    var $ctaBackdrop = $('.cta-popup-backdrop');
+    var histoireSection = document.querySelector('#notre-histoire');
+    var popupDismissed = false;
+
+    try {
+      popupDismissed = sessionStorage.getItem('ctaPopupDismissed') === 'true';
+    } catch (error) {
+      popupDismissed = false;
+    }
+
+    function openCtaPopup() {
+      if (popupDismissed) {
+        return;
+      }
+
+      if ($ctaPopup.length && !$ctaPopup.hasClass('is-visible')) {
+        $ctaPopup.addClass('is-visible').attr('aria-hidden', 'false');
+        $ctaBackdrop.addClass('is-visible').attr('aria-hidden', 'false');
+        var $closeButton = $ctaPopup.find('.cta-popup__close');
+        if ($closeButton.length) {
+          $closeButton.trigger('focus');
+        }
+      }
+    }
+
+    function closeCtaPopup() {
+      if ($ctaPopup.length) {
+        $ctaPopup.removeClass('is-visible').attr('aria-hidden', 'true');
+        $ctaBackdrop.removeClass('is-visible').attr('aria-hidden', 'true');
+        popupDismissed = true;
+        try {
+          sessionStorage.setItem('ctaPopupDismissed', 'true');
+        } catch (error) {
+          // Ignore storage errors (private mode, etc.)
+        }
+      }
+    }
+
+    if ($ctaPopup.length && $ctaBackdrop.length) {
+      $ctaPopup.find('.cta-popup__close').on('click', function () {
+        closeCtaPopup();
+      });
+
+      $ctaBackdrop.on('click', function () {
+        closeCtaPopup();
+      });
+
+      $(document).on('keydown.ctaPopup', function (event) {
+        if (event.key === 'Escape' && $ctaPopup.hasClass('is-visible')) {
+          closeCtaPopup();
+        }
+      });
+    }
+
+    if (histoireSection && !popupDismissed && $ctaPopup.length && $ctaBackdrop.length) {
+      if ('IntersectionObserver' in window) {
+        var histoireObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              openCtaPopup();
+              observer.disconnect();
+            }
+          });
+        }, { threshold: 0.5 });
+
+        histoireObserver.observe(histoireSection);
+      } else {
+        $(window).on('scroll.ctaPopup', function () {
+          if ($(window).scrollTop() + $(window).height() >= $(histoireSection).offset().top) {
+            openCtaPopup();
+            $(window).off('scroll.ctaPopup');
+          }
+        });
+      }
+    }
+
+
     // PAGE TRANSITION
     $('body a').on('click', function (e) {
       if (typeof $(this).data('fancybox') == 'undefined') {
