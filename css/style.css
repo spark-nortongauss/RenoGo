@@ -672,6 +672,81 @@ a:hover {
   width: 100%;
 }
 
+/* TOP BAR */
+.top-bar {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background: #ff7a04;
+  color: #0b0b0b;
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 10px 0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+.top-bar .contact-info {
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+.contact-info__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.contact-info i {
+  font-size: 16px;
+}
+.contact-info__link {
+  font-weight: 700;
+  text-decoration: none;
+}
+.contact-info__link:hover,
+.contact-info__link:focus {
+  text-decoration: none;
+}
+.contact-info__link:focus-visible {
+  outline: 2px solid #0b0b0b;
+  outline-offset: 2px;
+}
+.top-bar .contact-info__item,
+.top-bar .contact-info__link {
+  color: #0b0b0b;
+}
+.top-bar .contact-info__link {
+  white-space: nowrap;
+}
+.top-bar .contact-info i {
+  color: #0b0b0b;
+}
+.contact-info--drawer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.contact-info--drawer .contact-info__link {
+  color: #ff7a04;
+}
+.contact-info--drawer i {
+  color: #ff7a04;
+}
+.top-bar + .navbar {
+  --navbar-offset: 70px;
+}
+
 /* NAVBAR */
 .navbar {
   width: 100%;
@@ -680,7 +755,7 @@ a:hover {
   padding: 20px 0;
   position: fixed;
   left: 0;
-  top: 0;
+  top: var(--navbar-offset, 0);
   z-index: 4;
   transition: top ease 1s;
 }
@@ -688,7 +763,7 @@ a:hover {
   background: #0b0b0b;
 }
 .navbar.nav-down {
-  top: 0;
+  top: var(--navbar-offset, 0);
 }
 .navbar.nav-up {
   top: -100%;
@@ -3441,6 +3516,14 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
+  .top-bar .contact-info {
+    gap: 14px;
+  }
+
+  .top-bar + .navbar {
+    --navbar-offset: 80px;
+  }
+
   .navbar .navbar-button {
     padding: 0 15px;
     margin-left: 20px;
@@ -3480,6 +3563,24 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 /* RESPONSIVE TABLET  */
 @media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
+  .top-bar {
+    padding: 14px 0;
+  }
+
+  .top-bar .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .top-bar + .navbar {
+    --navbar-offset: 112px;
+  }
+
+  .contact-info--drawer {
+    gap: 16px;
+  }
+
   .side-widget {
     box-shadow: none;
   }
@@ -3674,6 +3775,14 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  .top-bar + .navbar {
+    --navbar-offset: 140px;
+  }
+
+  .contact-info--drawer {
+    gap: 18px;
+  }
+
   .side-widget {
     width: 240px;
   }
