@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120" role="img" aria-labelledby="title desc">
+  <title id="title">CAPEB artisans du bâtiment</title>
+  <desc id="desc">Stylised badge highlighting the CAPEB federation</desc>
+  <rect x="5" y="5" width="170" height="110" rx="14" fill="#b80f2e"/>
+  <path d="M37 38h46l20 20-20 20H37z" fill="#ffffff" opacity="0.92"/>
+  <path d="M92 28h20l31 31-31 31H92l31-31z" fill="#ff7a04"/>
+  <text x="50%" y="96" fill="#ffffff" font-size="18" font-family="'Arial Black', 'Museo Sans', sans-serif" font-weight="700" text-anchor="middle">CAPEB</text>
+</svg>

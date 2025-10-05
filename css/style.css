@@ -1018,6 +1018,48 @@ a:hover {
 .slider .slider-content .controls .button-next:hover {
   background: #ff7a04;
 }
+
+/* ACCREDITATION STRIP */
+.accreditation-strip {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 26px 36px;
+  border: 2px solid #e8e8e8;
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.accreditation-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.accreditation-badge figure {
+  margin: 0;
+  width: 92px;
+}
+
+.accreditation-badge figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.accreditation-badge span {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-badges {
+  margin-top: 60px;
+  background: rgba(255, 255, 255, 0.9);
+}
 .slider .slider-main {
   width: calc(50vw + 80px);
   height: calc(100vh - 150px);
@@ -3477,6 +3519,15 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   .footer-bar h2 {
     padding: 0;
   }
+
+  .accreditation-strip {
+    gap: 24px;
+    padding: 24px 28px;
+  }
+
+  .accreditation-badge {
+    flex: 1 1 calc(50% - 24px);
+  }
 }
 /* RESPONSIVE TABLET  */
 @media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
@@ -3554,6 +3605,16 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 
   .navbar .site-menu {
     display: none;
+  }
+
+  .accreditation-strip {
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .accreditation-badge {
+    flex: 1 1 calc(50% - 30px);
+    max-width: 320px;
   }
 
   .navbar .navbar-button span {
@@ -3737,6 +3798,22 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   .icon-content {
     width: 100%;
     margin: 15px 0;
+  }
+
+  .accreditation-strip {
+    padding: 22px;
+    gap: 18px;
+  }
+
+  .accreditation-badge {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .accreditation-badge span {
+    font-size: 12px;
+    letter-spacing: 0.5px;
   }
 
   .icon-content small {

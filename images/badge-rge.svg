@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120" role="img" aria-labelledby="title desc">
+  <title id="title">RGE Qualibat certification</title>
+  <desc id="desc">Stylised badge representing the RGE Qualibat accreditation</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#512d9d"/>
+      <stop offset="100%" stop-color="#714ac7"/>
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="170" height="110" rx="14" fill="url(#grad)"/>
+  <polygon points="90,22 140,82 40,82" fill="#feed01" opacity="0.92"/>
+  <text x="50%" y="48%" fill="#ffffff" font-size="22" font-family="'Arial Black', 'Museo Sans', sans-serif" font-weight="700" text-anchor="middle">RGE</text>
+  <text x="50%" y="70%" fill="#ffffff" font-size="14" font-family="'Arial', 'Museo Sans', sans-serif" text-anchor="middle" letter-spacing="2">QUALIBAT</text>
+</svg>

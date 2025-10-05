@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120" role="img" aria-labelledby="title desc">
+  <title id="title">Éco Artisan efficacité énergétique</title>
+  <desc id="desc">Stylised badge referencing the Éco Artisan label</desc>
+  <rect x="5" y="5" width="170" height="110" rx="14" fill="#0b8643"/>
+  <circle cx="60" cy="60" r="26" fill="#feed01"/>
+  <path d="M86 40h54l-10 18 10 18H94l-8-14z" fill="#ffffff" opacity="0.9"/>
+  <text x="50%" y="94" fill="#ffffff" font-size="16" font-family="'Arial Black', 'Museo Sans', sans-serif" font-weight="700" text-anchor="middle">ÉCO ARTISAN</text>
+</svg>

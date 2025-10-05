@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120" role="img" aria-labelledby="title desc">
+  <title id="title">Handibat accessibilité</title>
+  <desc id="desc">Stylised badge for Handibat accessibility accreditation</desc>
+  <rect x="5" y="5" width="170" height="110" rx="14" fill="#005aa7"/>
+  <rect x="18" y="18" width="144" height="84" rx="12" fill="#ffffff"/>
+  <path d="M60 40a12 12 0 1 1 12 12 12 12 0 0 1-12-12zm38 0h36v8h-22l4 16h18v8H94.5l-4.5-16H80v-8h7.5z" fill="#005aa7"/>
+  <text x="50%" y="92" fill="#005aa7" font-size="16" font-family="'Arial Black', 'Museo Sans', sans-serif" font-weight="700" text-anchor="middle">HANDIBAT</text>
+</svg>
